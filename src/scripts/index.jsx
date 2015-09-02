@@ -1,9 +1,11 @@
 'use strict';
 
-class a {
-    constructor() {
-        console.log('it works!');
-    }
+import React from 'react';
+
+class HelloComponent extends React.Component {  
+  render() {
+    return <div>Hello!!!</div>;
+  }
 }
 
-module.exports = new a();
+React.render(<HelloComponent />, document.body);

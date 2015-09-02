@@ -11,5 +11,8 @@
     "gulp-live-server": "0.0.25",
     "gutil": "^1.6.4",
     "webpack": "^1.12.0"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
   }
 }
