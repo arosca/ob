@@ -1,0 +1,15 @@
+{
+  "name": "ob",
+  "version": "1.0.0",
+  "author": "Andrei Rosca",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "gulp": "^3.9.0",
+    "gulp-html-replace": "^1.5.1",
+    "gulp-live-server": "0.0.25",
+    "gutil": "^1.6.4",
+    "webpack": "^1.12.0"
+  }
+}
