@@ -14,7 +14,7 @@ module.exports = class Weather extends Widget {
         });
     }
     render() {
-        // this sucks
+        // this sucks; should move to controller and hide component when it's not foarte cald
         if (!this.state.main) {
             return <div className="card">Loading</div>
         }

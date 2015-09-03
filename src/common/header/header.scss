@@ -2,7 +2,25 @@ header {
     height:10rem;
     transition:transform .5s, opacity .3s;
     background: url(http://www.droid-life.com/wp-content/uploads/2013/01/googlenownewyork.png) no-repeat center center;
+    background: url(http://thenextweb.com/wp-content/blogs.dir/1/files/2014/01/header-bg-645x250.jpeg) no-repeat center bottom;
+    background: url(http://www.rga.com/wp-content/uploads/2013/04/bucharest3.jpg) no-repeat center center;
     background-size: cover;
-    background-position: center top;
     margin-bottom: 1.5rem;
+
+    position: relative;
+	.logo {
+		// opacity: 0.8;
+		// font-family: 'Arial' !important;
+		position: absolute;
+		left: 1rem;
+		// right: 1rem;
+		bottom: 0;
+		padding: 1rem;
+		font-size: 1.7rem;
+		background: #fff;
+		img {
+			width: 100px;
+			margin-right: 10px;
+		}
+	}
 }
