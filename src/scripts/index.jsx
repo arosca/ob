@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Header from './common/header/index.jsx';
+
 import Weather from './weather/index.jsx';
 
 class Board extends React.Component {
@@ -10,9 +12,12 @@ class Board extends React.Component {
 	}
     render() {
         return (
+        <div>
+        	<Header />
             <div className="office-board">
                 {this.widgets}
             </div>
+		</div>
         );
     }
 }
