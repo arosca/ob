@@ -13,11 +13,11 @@ class Board extends React.Component {
     }
     render() {
         return (
-        <div>
+        <div className="office-board">
             <Header />
-            <div className="office-board">
+            <section>
                 {this.widgets}
-            </div>
+            </section>
         </div>
         );
     }

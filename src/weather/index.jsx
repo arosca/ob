@@ -16,13 +16,13 @@ module.exports = class Weather extends Widget {
     render() {
         // this sucks
         if (!this.state.main) {
-            return <div>Loading</div>
+            return <div className="card">Loading</div>
         }
 
         if (this.state.main.temp > tempFlag) {
-            return <div>E foarte clad!</div>
+            return <div className="card">E foarte clad!</div>
         } else {
-            return <div>Meh</div>
+            return <div className="card">Meh</div>
         }
     }
 };
