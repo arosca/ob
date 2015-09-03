@@ -2,7 +2,7 @@
 var path = require('path');
 
 module.exports = {
-    entry: './src/scripts/index.jsx',
+    entry: './src/index.jsx',
     output: {
         path: './dist/',
         filename: './scripts/index.js'
