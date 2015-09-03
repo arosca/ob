@@ -1,4 +1,3 @@
-// jshint ignore:start
 var gulp = require('gulp');
 var gls = require('gulp-live-server');
 var gutil = require('gutil');
@@ -28,7 +27,7 @@ gulp.task('serve', function() {
     server.start();
 
     gulp.watch(['src/**/*.html'], ['html']);
-    gulp.watch(['src/**/*.jsx'], ['webpack']);
+    gulp.watch(['src/**/*.js','src/**/*.jsx'], ['webpack']);
 
     //use gulp.watch to trigger server actions(notify, start or stop) 
     gulp.watch(['dist/**/*'], function (file) {

@@ -1,4 +1,5 @@
 {
+	"strict": false,
     "globals" : {
         "require": false,
         "module": false,
