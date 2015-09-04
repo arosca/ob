@@ -1,6 +1,5 @@
 import React from 'react';
-import './main.scss';
-
+import './common/styles/main.scss';
 
 import Header from './common/header/index.jsx';
 import Weather from './weather/index.jsx';

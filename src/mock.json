@@ -1,0 +1,2 @@
+
+{"coord":{"lon":26.1,"lat":44.43},"weather":[{"id":800,"main":"Clear","description":"Sky is Clear","icon":"01d"}],"base":"cmc stations","main":{"temp":32.18,"pressure":1014,"humidity":61,"temp_min":26,"temp_max":26.67},"wind":{"speed":4.1,"deg":50},"clouds":{"all":0},"dt":1441351686,"sys":{"type":1,"id":5986,"message":0.0102,"country":"RO","sunrise":1441338092,"sunset":1441385217},"id":676742,"name":"Grefoaicele","cod":200}

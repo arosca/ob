@@ -4,6 +4,6 @@ Office board experminet
 
 ###### Todo
 
-- figure out react & webpack
+- figure out react & flux
 - add widgets
 - acquire currency, disregard females

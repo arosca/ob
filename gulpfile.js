@@ -6,7 +6,7 @@ var webpackConfig = require('./webpack.config.js');
 var webpackDevConfig = Object.create(webpackConfig);
 
 gulp.task('html', function(){
-    gulp.src(['src/**/*.html'])
+    gulp.src(['src/**/*.html','src/**/*.json'])
         .pipe(gulp.dest('dist/'));
 });
 
@@ -35,4 +35,4 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.task('default',['html','serve']);
+gulp.task('default',['webpack','html','serve']);
