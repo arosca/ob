@@ -7,6 +7,9 @@ module.exports = {
         path: './dist/',
         filename: './scripts/index.js'
     },
+    resolve: {
+        root: [__dirname + '/src']
+    },
     module: {
         loaders: [
             {

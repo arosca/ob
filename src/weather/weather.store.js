@@ -6,14 +6,9 @@ class WeatherStore extends Backbone.Model {
         // this.url = 'http://api.openweathermap.org/data/2.5/weather?q=bucharst&units=metric';
         this.url = 'mock.json';
 
-        setInterval(this.fetch.bind(this),900000); // 15 minutes, this sucks
+        // setInterval(this.fetch.bind(this),900000); // 15 minutes, this sucks
+        setInterval(this.fetch.bind(this),5000); // 15 minutes, this sucks
         this.fetch();
-    }
-
-    getTemp() {
-        if (this.get('main')) {
-            return this.get('main').temp;
-        }
     }
 }
 
