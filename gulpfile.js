@@ -29,7 +29,7 @@ gulp.task('serve', function() {
     gulp.watch(['src/**/*.html'], ['html']);
     gulp.watch(['src/**/*.js','src/**/*.jsx','src/**/*.scss'], ['webpack']);
 
-    use gulp.watch to trigger server actions(notify, start or stop) 
+    // use gulp.watch to trigger server actions(notify, start or stop) 
     gulp.watch(['dist/**/*'], function (file) {
         server.notify.apply(server, [file]);
     });
