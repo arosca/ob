@@ -7,7 +7,7 @@ class WeatherStore extends Backbone.Model {
         this.url = 'mock.json';
 
         // setInterval(this.fetch.bind(this),900000); // 15 minutes, this sucks
-        setInterval(this.fetch.bind(this),5000); // 15 minutes, this sucks
+        setInterval(this.fetch.bind(this),5000);
         this.fetch();
     }
 }

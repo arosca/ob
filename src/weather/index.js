@@ -3,10 +3,10 @@ import WeatherStore from 'weather/weather.store.js';
 import Weather from 'weather/weather.jsx';
 import Dispatcher from 'dispatcher';
 
-let tempFlag = 30;
-var WeatherWidget = React.createElement(Weather);
+const tempFlag = 30;
+let WeatherWidget = React.createElement(Weather, {priority: 1});
 
-var weatherUpdate = (store) => {
+let weatherUpdate = (store) => {
     if (store.get('main').temp > tempFlag) {
         return Dispatcher.dispatch({
             actionType: 'widget:active',
@@ -19,4 +19,4 @@ var weatherUpdate = (store) => {
     });
 }
 
-WeatherStore.on('change',weatherUpdate);
+WeatherStore.on('change', weatherUpdate);

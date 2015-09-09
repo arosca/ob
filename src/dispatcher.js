@@ -1,2 +1,2 @@
-var Dispatcher = require('flux').Dispatcher;
+let Dispatcher = require('flux').Dispatcher;
 module.exports = new Dispatcher();

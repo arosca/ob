@@ -2,15 +2,21 @@ import Backbone from 'backbone';
 import Dispatcher from 'dispatcher';
 import EventEmitter from 'events';
 
-import 'weather/';
+import 'widget.manifest';
 
-var addWidget = (widget)=>{
+let addWidget = (widget)=>{
     widgets.push(widget);
 }
 
-var removeWidget = (widget)=>{
-    var index = widgets.indexOf(widget);
-    widgets = widgets.splice(index+1,1);
+let removeWidget = (widget)=>{
+    let index = widgets.indexOf(widget);
+    if (index !== -1) {
+        widgets = widgets.splice(index+1,1);
+    }
+}
+
+let sortWidgets = () => {
+    // console.log(widgets);
 }
 
 class Store extends EventEmitter {
@@ -28,17 +34,19 @@ class Store extends EventEmitter {
     }
 };
 
-var widgets = [];
-var WidgetStore = new Store();
+let widgets = [];
+let WidgetStore = new Store();
 
 Dispatcher.register((payload)=>{
     switch(payload.actionType) {
         case 'widget:active':
             addWidget(payload.widget);
+            sortWidgets();
             WidgetStore.emit('change');
             break;
         case 'widget:inactive':
-            removeWidget(payload.widget)
+            removeWidget(payload.widget);
+            sortWidgets();
             WidgetStore.emit('change');
             break;
     }
